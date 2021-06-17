@@ -48,14 +48,20 @@ const [todos,setTodos] =useState([])
    <Router>
       <Switch>
      
-     <Route exact path="/To-do-List">
+     <Route  path="/To-do-List">
      <Home/>
      </Route>
 
-        <Route exact path="/addtodo">
-       <AddTodo addstodo={addstodo} />
+     <Route exact path="/todoList" render={() => {
+       return(
+         <>
+        <AddTodo addstodo={addstodo} />
        <TodoList todos={todos} deletetodo={deletetodo} />
-       </Route>
+         </>
+       )
+     }}>
+      </Route>
+       
        
        </Switch>
        </Router>
