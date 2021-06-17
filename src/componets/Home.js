@@ -16,7 +16,7 @@ export default function Home() {
                     <img src={image1} id="image1" alt={image1} />
                     <h2>Manage Your Daily Todo</h2>
 
-                    <Link to="/todoList">
+                    <Link to="/To-do-List">
                         <button type="button" class="btn btn-primary" id="btn1"
                         ><span>&#8594;</span></button>
                     </Link>
