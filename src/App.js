@@ -48,7 +48,7 @@ const [todos,setTodos] =useState([])
    <Router>
       <Switch>
      
-     <Route exact path="/">
+     <Route exact path="/To-do-List">
      <Home/>
      </Route>
 
